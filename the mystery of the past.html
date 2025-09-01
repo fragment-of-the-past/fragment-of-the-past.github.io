@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Statement</title>
+  <style>
+    :root {
+      --bg: #0b0b10;
+      --fg: #e8e8f0;
+      --muted: #a0a3ad;
+      --accent: #8b5cf6;
+      --card: #12121a;
+      --ring: rgba(139, 92, 246, 0.35);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #fafafa;
+        --fg: #0f1222;
+        --muted: #4b5164;
+        --card: #ffffff;
+        --ring: rgba(139, 92, 246, 0.25);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: radial-gradient(1200px 600px at 20% -10%, var(--ring), transparent 40%),
+                  linear-gradient(180deg, var(--bg), var(--bg));
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      padding: 24px;
+      display: grid;
+      place-items: start center;
+    }
+    .wrap {
+      width: min(900px, 100%);
+      padding: 0 6px;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid rgba(140, 140, 155, 0.18);
+      border-radius: 20px;
+      padding: clamp(18px, 3.5vw, 28px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      outline: 1px solid transparent;
+    }
+    header h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.35rem, 1.8rem + 0.6vw, 2rem);
+      letter-spacing: 0.2px;
+    }
+    header p {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    .signature {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(140, 140, 155, 0.35);
+      font-style: italic;
+      color: var(--muted);
+    }
+    .accent {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .note {
+      background: rgba(139, 92, 246, 0.09);
+      border: 1px solid rgba(139, 92, 246, 0.25);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin: 0 0 14px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article aria-labelledby="title">
+      <header>
+        <h1 id="title">Statement</h1>
+        <p>Submitted by <span class="accent">Sleepechoes / Harry / Wacky Computer Guy</span></p>
+      </header>
+
+      <p>You might know who i am but the reason i am here today is so i can express my great dissapointment i have felt for the bringus server the great reason is whilst you guys fuck around in the bringus server saying your on leave for multiple months is bullshit whilst us members are stuck in a management fucking hell scape and iono is not prepared to handle full control of a server like this and jon tried his best on everything management minecraft discord his whole youtube channel this is all going behind his back the server mismanagement is all fun and games to you guys but people are being impacted for this whole situation here alot of the tickets here have been handled terribly like come on</p>
+
+      <p class="signature">— Sleepechoes/Harry/Wacky Computer Guy</p>
+    </article>
+  </div>
+</body>
+</html>
